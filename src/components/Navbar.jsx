@@ -17,13 +17,18 @@ export default function Navbar() {
         onClick={() => navigate('/')}
       >
         <BiUpsideDown />
-        <h1>Moomin</h1>
+        <h1 className="cursor-pointer">Moomin</h1>
       </div>
       <nav className="flex items-center gap-4 font-semibold">
-        <h2 onClick={() => navigate('/products')}>products</h2>
+        <h2 onClick={() => navigate('/products')} className="cursor-pointer">
+          products
+        </h2>
         {user && <Link to="/carts">Carts</Link>}
         {user && user.isAdmin && (
-          <BsFillPencilFill onClick={() => navigate('/products/new')} />
+          <BsFillPencilFill
+            onClick={() => navigate('/products/new')}
+            className="cursor-pointer"
+          />
         )}
         {user && <User user={user} />}
         {!user && <Button text={'Login'} onClick={login} />}
