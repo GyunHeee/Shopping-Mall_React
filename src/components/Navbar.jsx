@@ -2,7 +2,7 @@ import React from 'react';
 import { BiUpsideDown } from 'react-icons/bi';
 import { BsFillPencilFill } from 'react-icons/bs';
 import { useNavigate, Link } from 'react-router-dom';
-import { useAuthContext } from './context/AuthContext';
+import { useAuthContext } from '../context/AuthContext';
 import Button from './ui/Button';
 import User from './User';
 
