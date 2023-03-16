@@ -4,6 +4,7 @@ import { BsFillPencilFill } from 'react-icons/bs';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuthContext } from '../context/AuthContext';
 import Button from './ui/Button';
+import CartStatus from './ui/CartStatus';
 import User from './User';
 
 export default function Navbar() {
@@ -23,7 +24,11 @@ export default function Navbar() {
         <h2 onClick={() => navigate('/products')} className="cursor-pointer">
           products
         </h2>
-        {user && <Link to="/carts">Carts</Link>}
+        {user && (
+          <Link to="/carts">
+            <CartStatus />
+          </Link>
+        )}
         {user && user.isAdmin && (
           <BsFillPencilFill
             onClick={() => navigate('/products/new')}
