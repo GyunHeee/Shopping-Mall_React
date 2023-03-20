@@ -37,9 +37,9 @@ Shopping mall 프로젝트입니다. cloudinary를 이용하여 이미지를 관
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/92011224/226263815-0096ab4e-b20b-4d3a-9e7b-aa2c70bfe7fe.gif)
 
 3. admin 구글 계정으로 로그인 시 새로운 제품등록 page에 접근할 수 있습니다. 새로운 제품등록 페이지에서 등록한 제품은 즉시 화면에 업로드 되고, firebase 실시간 데이터베이스에도 등록됩니다.
-   <left>
-   <img src="https://user-images.githubusercontent.com/92011224/226262515-40fb642c-34c3-4539-800d-de929e04fa95.gif"/>
-   </left>
+<left>
+<img src="https://user-images.githubusercontent.com/92011224/226262515-40fb642c-34c3-4539-800d-de929e04fa95.gif"/>
+</left>
 
 4. admin 계정이 아닌 구글계정으로 새로운 제품등록 page에 접근 시 home 화면으로 redirect됩니다. 로그인하지 않은 사용자가 장바구니 page에 접근 시에도 home 화면으로 redirect됩니다.
 
