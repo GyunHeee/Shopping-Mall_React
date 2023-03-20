@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Shopping Mall
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 목적
 
-## Available Scripts
+Shopping mall 프로젝트입니다. cloudinary를 이용하여 이미지를 관리하고 firebase를 사용하여 데이터관리와 네트워크통신 실습을 위한 프로젝트입니다.
 
-In the project directory, you can run:
+## 주요 기능
 
-### `yarn start`
+### Home page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="https://user-images.githubusercontent.com/92011224/226246803-491ca81a-93e3-49c4-b620-08e08609fe40.png" width="300px" height="230px"/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Product page
 
-### `yarn test`
+<img src="https://user-images.githubusercontent.com/92011224/226249408-f1bdb0d6-ae30-4181-9721-c58c3020d4a9.png" width="300px" height="230px"/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 장바구니 page
 
-### `yarn build`
+<img src="https://user-images.githubusercontent.com/92011224/226246940-61722d65-f0fd-4fa2-a5e6-6f1e33adcb05.png" width="300px" height="230px"/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 새로운 제품등록 page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="https://user-images.githubusercontent.com/92011224/226246966-1a309254-b71f-4c9e-927c-6ed146de0ab1.png" width="300px" height="230px"/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 제품 상세정보 page
 
-### `yarn eject`
+<img src="https://user-images.githubusercontent.com/92011224/226246993-5ff79f1a-f127-4e93-bd7f-a163a278166d.png" width="300px" height="230px"/>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+##
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. 구글 계정을 이용하여 로그인 할 수 있습니다. 새로고침을 하여도 로그인, 로그아웃 상태는 유지됩니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![ezgif com-video-to-gif (6)](https://user-images.githubusercontent.com/92011224/226248217-0fa3d914-6d88-4882-8ce5-cfc4e9036a40.gif)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. 제품 상세정보 페이지에서 옵션을 선택하고 제품을 장바구니에 추가할 수 있습니다. 장바구니에 추가된 제품은 수량 조절과 삭제가 가능합니다. 장바구니 page에서는 장바구니에 담긴 제품의 총 가격과 배송비를 보여줍니다.
 
-## Learn More
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/92011224/226263815-0096ab4e-b20b-4d3a-9e7b-aa2c70bfe7fe.gif)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. admin 구글 계정으로 로그인 시 새로운 제품등록 page에 접근할 수 있습니다. 새로운 제품등록 페이지에서 등록한 제품은 즉시 화면에 업로드 되고, firebase 실시간 데이터베이스에도 등록됩니다.
+   <left>
+   <img src="https://user-images.githubusercontent.com/92011224/226262515-40fb642c-34c3-4539-800d-de929e04fa95.gif"/>
+   </left>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. admin 계정이 아닌 구글계정으로 새로운 제품등록 page에 접근 시 home 화면으로 redirect됩니다. 로그인하지 않은 사용자가 장바구니 page에 접근 시에도 home 화면으로 redirect됩니다.
 
-### Code Splitting
+## 배운 점
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- cloudinary 서비스로 이미지 업로드
+- firebase를 이용해서 구글로그인
+- firebase 실시간 데이터베이스를 이용해서 데이터를 동적으로 읽고 쓰기
+- javascript object.values()
+- navigate로 컴포넌트 이동 시 props 전달 -> state, useLocation 활용
+- page상에서 업데이트를 즉각적으로 처리 -> useQuery를 사용할 때 읽는 부분에서 얼마나 오랫동안 cache를 하고있는지 모르니까 useMutation을 써서 ‘products’ 캐시키를 가지고 있는 것들을 업데이트 해야한다.
+- URL.createObjectURL(file)
 
-### Analyzing the Bundle Size
+## 어려운 점
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- firebase 실시간 데이터베이스 활용 부분
+- 변경 사항을 즉각적으로 페이지에 업데이트 하기 위해 react-query의 useMutation 사용
+- 리팩토링 과정에서 사용한 커스텀 훅
 
-### Making a Progressive Web App
+## 더 공부할 점
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- 주문하기에서 결제시스템을 추가하여 구현
+- 리액트쿼리 invalidate
 
-### Advanced Configuration
+## Deploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://moominshop.netlify.app/
