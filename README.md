@@ -43,6 +43,9 @@ Shopping mall 프로젝트입니다. cloudinary를 이용하여 이미지를 관
 
 4. admin 계정이 아닌 구글계정으로 새로운 제품등록 page에 접근 시 home 화면으로 redirect됩니다. 로그인하지 않은 사용자가 장바구니 page에 접근 시에도 home 화면으로 redirect됩니다.
 
+## 사용 기술
+React, tailwindcss, Firebase (Authentication, RealTime Database), Cloudinary,React Router, React Query(Tanstack Query)
+
 ## 배운 점
 
 - cloudinary 서비스로 이미지 업로드
