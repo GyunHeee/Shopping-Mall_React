@@ -68,7 +68,3 @@ React, tailwindcss, Firebase (Authentication, RealTime Database), Cloudinary,Rea
 
 - 주문하기에서 결제시스템을 추가하여 구현
 - 리액트쿼리 invalidate
-
-## Deploy
-
-https://moominshop.netlify.app/
