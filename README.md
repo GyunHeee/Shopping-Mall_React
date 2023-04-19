@@ -46,7 +46,7 @@ Shopping Mall 프로젝트입니다. Cloudinary를 이용하여 이미지를 관
 
 
 ## 사용 기술
-React, tailwindcss, Firebase (Authentication, RealTime Database), Cloudinary, React Router DOM, React Query(Tanstack Query)
+React, Tailwind CSS, Firebase (Authentication, RealTime Database), Cloudinary, React Router DOM, React Query(Tanstack Query)
 
 ## 배운 점
 
