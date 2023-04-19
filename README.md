@@ -2,7 +2,7 @@
 
 ## 목적
 
-Shopping mall 프로젝트입니다. cloudinary를 이용하여 이미지를 관리하고 firebase를 사용하여 데이터관리와 네트워크통신 실습을 위한 프로젝트입니다.
+Shopping Mall 프로젝트입니다. Cloudinary를 이용하여 이미지를 관리하고 Firebase를 사용하여 데이터관리와 네트워크통신 실습을 위한 프로젝트입니다.
 
 ## 주요 기능
 
