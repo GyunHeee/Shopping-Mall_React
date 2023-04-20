@@ -61,7 +61,7 @@ React, Tailwind CSS, Firebase (Authentication, RealTime Database), Cloudinary, R
 ## 어려운 점
 
 - firebase 실시간 데이터베이스 활용 부분
-- 변경 사항을 즉각적으로 페이지에 업데이트 하기 위해 react-query의 useMutation 사용
+- 변경 사항을 즉각적으로 페이지에 업데이트 하기 위해 React Query의 useMutation 사용
 - 리팩토링 과정에서 사용한 커스텀 훅
 
 ## 더 공부할 점
